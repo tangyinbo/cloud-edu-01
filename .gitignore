@@ -1,0 +1,20 @@
+﻿*.class
+!.gitignore
+!README.md
+!pom.xml
+!assembly.xml
+!*.java
+!*.xml
+!*.properites
+!*/src/
+*/.classpath
+*/.settings
+*/target
+.project
+# Package Files #
+*.jar
+*.war
+*.ear
+/target/
+.idea/
+*.iml
