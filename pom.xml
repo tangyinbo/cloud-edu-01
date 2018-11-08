@@ -9,6 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-server-8100</module>
+        <module>uaa-provider-9100</module>
+        <module>edu-api</module>
+        <module>uaa-consumer-7100</module>
+        <module>uaa-provider-9101</module>
+        <module>eureka-server-8101</module>
+        <module>hystrix-dashboard</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,6 +28,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring.boot.version>1.5.13.RELEASE</spring.boot.version>
         <spring.cloud.version>Edgware.SR4</spring.cloud.version>
+        <lombok.version>1.18.4</lombok.version>
     </properties>
 
     <dependencies>
@@ -35,6 +42,14 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

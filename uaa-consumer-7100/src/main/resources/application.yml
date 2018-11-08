@@ -1,0 +1,15 @@
+server:
+  port: 7100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8101.com:8101/eureka/,http://eureka8101.com:8100/eureka/
+
+  instance:
+    instance-id: uaa-consumer-7100
+spring:
+  application:
+    name: uaa-consumer
+feign:
+  hystrix:
+    enabled: true
