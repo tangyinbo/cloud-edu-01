@@ -1,18 +1,18 @@
 server:
-  port: 9101
+  port: 9100
 eureka:
   client:
     service-url:
       defaultZone: http://eureka8101.com:8101/eureka/,http://eureka8101.com:8100/eureka/
   instance:
-    instance-id: uaa-provider-9101
+    instance-id: uaa-provider-9100
 spring:
   application:
     name: uaa-provider
   cloud:
     config:
       discovery:
-        service-id: config-center
+        service-id: CONFIG-CENTER
         enabled: true
       profile: dev
       label: master

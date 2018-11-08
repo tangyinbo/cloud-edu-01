@@ -15,6 +15,7 @@
         <module>uaa-provider-9101</module>
         <module>eureka-server-8101</module>
         <module>hystrix-dashboard</module>
+        <module>config-center-5100</module>
     </modules>
     <packaging>pom</packaging>
 

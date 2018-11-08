@@ -4,8 +4,13 @@ server:
 eureka:
   instance:
     hostname: eureka8101.com
+  server:
+    response-cache-update-interval-ms: 3000
+    eviction-interval-timer-in-ms: 3000
+    enable-self-preservation: false
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://eureka8100.com:8100/eureka/
+

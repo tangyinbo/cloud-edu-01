@@ -16,12 +16,6 @@ public class UserController {
     public static int a;
     @RequestMapping("/getUser")
     public User getUser(){
-        a++;
-        if(a%2 == 1){
-            throw new RuntimeException();
-        }
-
-        System.out.println("----------------------------"+a);
         User user = new User(new Random().nextInt(1000)*1L,"tangyinbo","9101");
         return user;
     }
