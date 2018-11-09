@@ -1,0 +1,19 @@
+server:
+  port: 4100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka8101.com:8101/eureka/,http://eureka8101.com:8100/eureka/
+  instance:
+    instance-id: zuul-service-4100
+spring:
+  application:
+    name: zuul-service
+zuul:
+  routes:
+    uaa-provider:
+      path: /uaa-api/**
+      serviceId: UAA-PROVIDER
+    uaa-consumer:
+      path: /uaa-consumer/**
+      serviceId: UAA-CONSUMER

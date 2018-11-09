@@ -16,6 +16,8 @@
         <module>eureka-server-8101</module>
         <module>hystrix-dashboard</module>
         <module>config-center-5100</module>
+        <module>zuul-service-4100</module>
+        <module>uaa-oauth2-jwt3100</module>
     </modules>
     <packaging>pom</packaging>
 

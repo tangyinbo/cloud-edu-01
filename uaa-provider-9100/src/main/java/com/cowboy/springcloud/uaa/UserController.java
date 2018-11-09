@@ -15,16 +15,10 @@ import java.util.Random;
 @RestController
 public class UserController {
     private static int a = 0;
-    @Value("${user.name2}")
-    private String name;
-    @RequestMapping("/getUser")
-    public User getUser(){
-        User user = new User(new Random().nextInt(1000)*1L,"tangyinbo","9100");
-        return user;
-    }
 
-    @RequestMapping("config")
-    public String getConfigInfo(){
-        return name;
+    @RequestMapping("/getUser")
+    public User getUser() {
+        User user = new User(new Random().nextInt(1000) * 1L, "tangyinbo", "9100");
+        return user;
     }
 }
